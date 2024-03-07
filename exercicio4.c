@@ -14,7 +14,7 @@ int main() {
     printf("Seu nome \"%s\" tem %d caractes\n", matriz[i], strlen(matriz[i]));
   }
   
-  printf("\nSeu nome abreviado é: ");
+  printf("\nSeu nome abreviado é: \n");
   for(int i = 0; i < 3; i++)
     printf("%c.", matriz[i][0]);
 
@@ -30,6 +30,9 @@ int main() {
   
   printf("\nSeu nome tem %d vogais", count);
 
+for (int i = 0; i < 3; i++) {
+    ponteiro[i] = matriz[i];
+  }
   for (int i = 0; i < 3; i++) {
       for (int j = 0; j < strlen(matriz[i]); j++){
       letra = tolower(matriz[i][j]);
@@ -52,10 +55,10 @@ int main() {
         }
     }
   }
-  for(int k = 0; k < 3; k++) {
-    printf("\n%s", ponteiro[k]);
-  }
+  printf("\n\nSeu nome com vogais substituídas é: \n");
+   for (int i = 0; i < 3; ++i) { 
+    printf("%s\n", ponteiro[i]);
+    }
     
- 
-  return 0;
+   return 0;
 }
