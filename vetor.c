@@ -41,9 +41,8 @@ int main() {
   paprovados = aprovados / numAlunos * 100;
   pfinal = final / numAlunos * 100;
   preprovados = reprovados / numAlunos * 100;
-  printf("A media da turma e: %g\n", totalTurma / numAlunos);
-  printf("A porcentagem de alunos aprovados e: %g%%\n", paprovados);
-  printf("A porcentagem de alunos de final e: %g%%\n", pfinal);
-  printf("A porcentagem de alunos reprovados e: %g%%\n", preprovados);
-  system("pause");
+  printf("A média da turma é: %g\n", totalTurma / numAlunos);
+  printf("A porcentagem de alunos aprovados é: %g%%\n", paprovados);
+  printf("A porcentagem de alunos de final é: %g%%\n", pfinal);
+  printf("A porcentagem de alunos reprovados é: %g%%\n", preprovados);
 }
