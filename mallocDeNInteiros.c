@@ -1,14 +1,10 @@
-#include <ctype.h>
-#include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int n;
 int media = 0;
 
 int main() {
-  setlocale(LC_ALL, "Portuguese"); // Padrão em português
   scanf("%d", &n);
   int *vetor = (int *)malloc(n * sizeof(int));
   if (vetor == NULL) {
