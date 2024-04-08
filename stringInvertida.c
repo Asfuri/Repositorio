@@ -10,8 +10,7 @@ int main() {
   scanf("%m[^\n]", &string);
   int tamanhoDaString = strlen(string);
   invertida = (char *)malloc(1 + tamanhoDaString);
-  
-  // Verifica se a alocação de memória para invertida foi bem-sucedida
+
   if (invertida == NULL) {
     printf("ERRO!");
     free(string);
@@ -23,7 +22,7 @@ int main() {
   }
   invertida[tamanhoDaString] = '\0';
   printf("%s", invertida);
-  
+
   free(string);
   free(invertida);
 }
